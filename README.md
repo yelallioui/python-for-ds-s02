@@ -23,6 +23,7 @@ Colab **ne sauvegarde pas** un notebook ouvert depuis GitHub : si vous fermez l'
 2. Une **copie** s'ouvre dans un nouvel onglet : **travaillez dans cette copie**, et fermez l'original.
 
 ### Étape 3 · Travailler
+- **Remplissez d'abord la cellule 🪪 « Qui êtes‑vous ? »** : votre **nom**, votre **prénom** et votre **CNE**, entre guillemets. Le contrôle reste ❌ tant qu'elle n'est pas remplie.
 - Exécutez les cellules **dans l'ordre** (`Maj + Entrée`).
 - Faites chaque exercice en remplaçant les `...` par votre code. Un **✅** ou un **❌** s'affiche sous chaque exercice ; en cas de ❌, ouvrez l'**indice 1**, puis 2, puis 3.
 - **Partie 1** : rien d'autre à faire, elle est indépendante.
@@ -35,30 +36,36 @@ Colab **ne sauvegarde pas** un notebook ouvert depuis GitHub : si vous fermez l'
 
 ---
 
-## 📂 Avoir ce dépôt dans votre compte GitHub (facultatif)
+## 📂 Créer votre dépôt GitHub (pour rendre votre travail)
 
-Pour garder vos réponses dans **votre** compte GitHub :
+![Visibilité : PRIVATE obligatoire](https://img.shields.io/badge/Visibilit%C3%A9-PRIVATE%20OBLIGATOIRE-red?style=for-the-badge)
+
+> [!CAUTION]
+> **CHOISISSEZ « PRIVATE ». GitHub propose « Public » par défaut : changez‑le !**
+>
+> Un dépôt **public** est visible par **tout le monde**, avec **vos réponses et votre CNE**. Si vous vous trompez, voir « En cas de problème » plus bas.
 
 1. Créez un compte sur [github.com](https://github.com) si vous n'en avez pas (gratuit).
 2. En haut de **cette page**, cliquez sur le bouton vert **Use this template**, puis **Create a new repository**.
-3. Donnez un nom au dépôt (par exemple `python-for-ds-s02`) et choisissez **Private** (vos réponses ne seront vues de personne), puis **Create repository**.
-4. Dans Colab : **Fichier ▸ Ouvrir le notebook ▸ onglet GitHub**. Saisissez votre identifiant GitHub, cochez **Include private repos** (autorisez Colab si demandé), puis choisissez votre dépôt et le notebook.
-5. Pour sauvegarder : **Fichier ▸ Enregistrer une copie dans GitHub**.
+3. **Nom du dépôt** : **`nom-prenom-s02`**, en **minuscules**, **sans accent**, **sans espace** (remplacez‑les par des tirets). Exemple : `benali-sara-s02`.
+4. **Visibilité : cochez `Private`** (voir l'encadré rouge ci‑dessus), puis **Create repository**.
+5. Dans Colab : **Fichier ▸ Ouvrir le notebook ▸ onglet GitHub**. Saisissez votre identifiant GitHub, cochez **Include private repos** (autorisez Colab si demandé), puis choisissez votre dépôt et le notebook.
+6. Pour sauvegarder : **Fichier ▸ Enregistrer une copie dans GitHub**.
 
-> ⚠️ Les boutons **Open in Colab** de cette page et des notebooks ouvrent toujours la **version d'origine** de l'enseignant. Pour rouvrir **votre** copie, passez par l'onglet **GitHub** de Colab (étape 4).
+> ⚠️ Les boutons **Open in Colab** de cette page et des notebooks ouvrent toujours la **version d'origine** de l'enseignant. Pour rouvrir **votre** copie, passez par l'onglet **GitHub** de Colab (point 5).
 
 ---
 
 ## 📤 Partager votre dépôt avec l'enseignant
 
-Votre dépôt est **privé** : l'enseignant ne peut le voir que si **vous l'y invitez**.
+Votre dépôt est **privé** : l'enseignant ne peut le voir que si **vous l'y invitez**. Le **nom du dépôt** est la première chose qu'il verra : respectez la convention `nom-prenom-s02`.
 
 1. Ouvrez **votre** dépôt sur GitHub (celui créé avec **Use this template**).
 2. Cliquez sur l'onglet **Settings** (en haut de la page du dépôt), puis sur **Collaborators** dans le menu de gauche.
 3. Cliquez sur **Add people**, saisissez **`yelallioui`**, choisissez ce compte dans la liste, puis cliquez sur **Add yelallioui to this repository**.
-4. **Envoyez l'adresse de votre dépôt** à l'enseignant, par le moyen indiqué en cours. Elle ressemble à `https://github.com/votre-identifiant/nom-du-depot`. L'enseignant reçoit une invitation et l'accepte.
+4. **Envoyez l'adresse de votre dépôt** à l'enseignant, par le moyen indiqué en cours. Elle ressemble à `https://github.com/votre-identifiant/nom-prenom-s02`. L'enseignant reçoit une invitation et l'accepte.
 
-> 💡 L'enseignant ne voit que ce qui est **dans le dépôt**. Quand vous avez terminé une séance de travail, faites **Fichier ▸ Enregistrer une copie dans GitHub** (point 5 de la section précédente) : le notebook est enregistré **avec ses résultats**, les ✅ et les ❌ y restent visibles.
+> 💡 L'enseignant ne voit que ce qui est **dans le dépôt**. Quand vous avez terminé une séance de travail, faites **Fichier ▸ Enregistrer une copie dans GitHub** (point 6 de la section précédente) : le notebook est enregistré **avec ses résultats**, les ✅ et les ❌ y restent visibles.
 
 ---
 
@@ -74,6 +81,7 @@ Votre dépôt est **privé** : l'enseignant ne peut le voir que si **vous l'y in
 
 | Message ou symptôme | Cause et remède |
 |---|---|
+| 🔴 **Mon dépôt est « Public »** | **Rendez‑le privé tout de suite** : dans votre dépôt, **Settings ▸ General**, descendez jusqu'à **Danger Zone**, **Change repository visibility ▸ Change to private**. |
 | `FileNotFoundError` sur `data/titanic.csv` | Le notebook n'est pas ouvert depuis son dossier. Dans Colab, exécutez d'abord les deux lignes `!git clone …` et `%cd …` ci‑dessus ; sur votre ordinateur, rouvrez le notebook depuis `mini-projet-02/`. |
 | Tout a disparu après avoir fermé l'onglet | La copie n'avait pas été faite (étape 2). Recommencez et faites **Fichier ▸ Enregistrer une copie dans Drive** dès l'ouverture. |
 | Colab n'affiche pas mon dépôt privé | Cochez **Include private repos** dans l'onglet GitHub et autorisez Colab. |
