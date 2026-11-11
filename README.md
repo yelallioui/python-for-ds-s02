@@ -1,0 +1,81 @@
+# 🔢 Séance 2 — NumPy : penser en tableaux
+
+_Master IA‑GI · Python pour les sciences de données · FPK / USMS_
+
+Ce dépôt contient **le TP de la séance 2**. Deux notebooks, à faire **dans l'ordre** :
+
+| | Notebook | Durée | Ouvrir dans Colab |
+|---|---|---|---|
+| **1** | **Partie 1 · Pratiquer** : 39 exercices en 9 séries, de votre premier tableau jusqu'aux fichiers | environ 2 h | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yelallioui/python-for-ds-s02/blob/main/tp-seance-02.ipynb) |
+| **2** | **Partie 2 · Mini‑projet Titanic** : charger, interroger, écrire un CSV, puis découvrir les limites de NumPy | environ 45 min | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yelallioui/python-for-ds-s02/blob/main/mini-projet-02/mini-projet-02.ipynb) |
+
+---
+
+## 🚀 Pour commencer : 3 étapes
+
+### Étape 1 · Ouvrir le notebook
+Cliquez sur **Open in Colab** (tableau ci‑dessus). Connectez‑vous avec votre **compte Google** si Colab le demande. Le notebook s'ouvre dans **votre** session Colab.
+
+### Étape 2 · Faire votre copie (à ne pas oublier ⚠️)
+Colab **ne sauvegarde pas** un notebook ouvert depuis GitHub : si vous fermez l'onglet, **tout est perdu**. Dès l'ouverture :
+
+1. Menu **Fichier ▸ Enregistrer une copie dans Drive**.
+2. Une **copie** s'ouvre dans un nouvel onglet : **travaillez dans cette copie**, et fermez l'original.
+
+### Étape 3 · Travailler
+- Exécutez les cellules **dans l'ordre** (`Maj + Entrée`).
+- Faites chaque exercice en remplaçant les `...` par votre code. Un **✅** ou un **❌** s'affiche sous chaque exercice ; en cas de ❌, ouvrez l'**indice 1**, puis 2, puis 3.
+- **Partie 1** : rien d'autre à faire, elle est indépendante.
+- **Mini‑projet** : Colab ouvre le notebook **sans son dossier**. Avant tout, exécutez dans **une cellule** ces deux lignes (elles sont aussi rappelées en haut du notebook) :
+
+  ```
+  !git clone https://github.com/yelallioui/python-for-ds-s02
+  %cd python-for-ds-s02/mini-projet-02
+  ```
+
+---
+
+## 📂 Avoir ce dépôt dans votre compte GitHub (facultatif)
+
+Pour garder vos réponses dans **votre** compte GitHub :
+
+1. Créez un compte sur [github.com](https://github.com) si vous n'en avez pas (gratuit).
+2. En haut de **cette page**, cliquez sur le bouton vert **Use this template**, puis **Create a new repository**.
+3. Donnez un nom au dépôt (par exemple `python-for-ds-s02`) et choisissez **Private** (vos réponses ne seront vues de personne), puis **Create repository**.
+4. Dans Colab : **Fichier ▸ Ouvrir le notebook ▸ onglet GitHub**. Saisissez votre identifiant GitHub, cochez **Include private repos** (autorisez Colab si demandé), puis choisissez votre dépôt et le notebook.
+5. Pour sauvegarder : **Fichier ▸ Enregistrer une copie dans GitHub**.
+
+> ⚠️ Les boutons **Open in Colab** de cette page et des notebooks ouvrent toujours la **version d'origine** de l'enseignant. Pour rouvrir **votre** copie, passez par l'onglet **GitHub** de Colab (étape 4).
+
+---
+
+## 💻 Sur votre ordinateur (sans Colab)
+
+1. Installez **Python 3** avec Jupyter (le plus simple : [Anaconda](https://www.anaconda.com/download)), ou VS Code avec l'extension Jupyter. NumPy doit être installé : `pip install numpy` (déjà présent avec Anaconda).
+2. Téléchargez le dépôt (**Code ▸ Download ZIP**) ou clonez‑le, puis **décompressez‑le** si besoin.
+3. Ouvrez chaque notebook **depuis son dossier**, sans le déplacer : la partie 1 depuis le dossier du dépôt, le mini‑projet depuis `mini-projet-02/`.
+
+---
+
+## ❓ En cas de problème
+
+| Message ou symptôme | Cause et remède |
+|---|---|
+| `FileNotFoundError` sur `data/titanic.csv` | Le notebook n'est pas ouvert depuis son dossier. Dans Colab, exécutez d'abord les deux lignes `!git clone …` et `%cd …` ci‑dessus ; sur votre ordinateur, rouvrez le notebook depuis `mini-projet-02/`. |
+| Tout a disparu après avoir fermé l'onglet | La copie n'avait pas été faite (étape 2). Recommencez et faites **Fichier ▸ Enregistrer une copie dans Drive** dès l'ouverture. |
+| Colab n'affiche pas mon dépôt privé | Cochez **Include private repos** dans l'onglet GitHub et autorisez Colab. |
+| Une cellule affiche `NameError` | Une cellule précédente n'a pas été exécutée : exécutez les cellules **dans l'ordre**, depuis le début. |
+| Un ❌ qui ne part pas | Lisez les indices 1, 2, 3 de l'exercice, puis affichez vos variables avec `print`. |
+
+---
+
+## 🗂️ Contenu du dépôt
+
+```
+tp-seance-02.ipynb              Partie 1 : 39 exercices en 9 séries
+mini-projet-02/
+  mini-projet-02.ipynb          Partie 2 : mini-projet Titanic
+  data/titanic.csv              le fichier de départ du mini-projet
+```
+
+Le dossier `result/` est créé par le notebook quand il écrit votre fichier `s2_titanic.csv`.
