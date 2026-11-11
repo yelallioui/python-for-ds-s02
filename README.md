@@ -49,6 +49,19 @@ Pour garder vos réponses dans **votre** compte GitHub :
 
 ---
 
+## 📤 Partager votre dépôt avec l'enseignant
+
+Votre dépôt est **privé** : l'enseignant ne peut le voir que si **vous l'y invitez**.
+
+1. Ouvrez **votre** dépôt sur GitHub (celui créé avec **Use this template**).
+2. Cliquez sur l'onglet **Settings** (en haut de la page du dépôt), puis sur **Collaborators** dans le menu de gauche.
+3. Cliquez sur **Add people**, saisissez **`yelallioui`**, choisissez ce compte dans la liste, puis cliquez sur **Add yelallioui to this repository**.
+4. **Envoyez l'adresse de votre dépôt** à l'enseignant, par le moyen indiqué en cours. Elle ressemble à `https://github.com/votre-identifiant/nom-du-depot`. L'enseignant reçoit une invitation et l'accepte.
+
+> 💡 L'enseignant ne voit que ce qui est **dans le dépôt**. Quand vous avez terminé une séance de travail, faites **Fichier ▸ Enregistrer une copie dans GitHub** (point 5 de la section précédente) : le notebook est enregistré **avec ses résultats**, les ✅ et les ❌ y restent visibles.
+
+---
+
 ## 💻 Sur votre ordinateur (sans Colab)
 
 1. Installez **Python 3** avec Jupyter (le plus simple : [Anaconda](https://www.anaconda.com/download)), ou VS Code avec l'extension Jupyter. NumPy doit être installé : `pip install numpy` (déjà présent avec Anaconda).
@@ -64,6 +77,7 @@ Pour garder vos réponses dans **votre** compte GitHub :
 | `FileNotFoundError` sur `data/titanic.csv` | Le notebook n'est pas ouvert depuis son dossier. Dans Colab, exécutez d'abord les deux lignes `!git clone …` et `%cd …` ci‑dessus ; sur votre ordinateur, rouvrez le notebook depuis `mini-projet-02/`. |
 | Tout a disparu après avoir fermé l'onglet | La copie n'avait pas été faite (étape 2). Recommencez et faites **Fichier ▸ Enregistrer une copie dans Drive** dès l'ouverture. |
 | Colab n'affiche pas mon dépôt privé | Cochez **Include private repos** dans l'onglet GitHub et autorisez Colab. |
+| L'enseignant ne voit pas mon travail | Soit le notebook n'a pas été enregistré **dans votre dépôt** (**Fichier ▸ Enregistrer une copie dans GitHub**), soit l'enseignant n'est pas encore **collaborateur** (section « Partager votre dépôt avec l'enseignant », points 2 et 3). |
 | Une cellule affiche `NameError` | Une cellule précédente n'a pas été exécutée : exécutez les cellules **dans l'ordre**, depuis le début. |
 | Un ❌ qui ne part pas | Lisez les indices 1, 2, 3 de l'exercice, puis affichez vos variables avec `print`. |
 
